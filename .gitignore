@@ -1,0 +1,6 @@
+/design
+node_modules
+dist
+.parcel-cache
+.prettierrc
+/style-guide.md

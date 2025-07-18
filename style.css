@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Very-Dark-Gray: hsl(0, 0%, 17%);
+  --Neutral-Dark-Gray: hsl(0, 1%, 25%);
+  --Dark-Gray: hsl(0, 0%, 59%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: var(--Dark-Gray);
+}
+
+.container {
+  position: relative;
+}
+
+.ip_address-header {
+  background-image: url(./images/pattern-bg-desktop.png);
+  background-size: cover;
+  height: 23rem;
+  text-align: center;
+}
+
+.ip_address-tracker {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #fff;
+  padding-top: 3rem;
+}
+
+.ip_address-search {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.ip_search_box {
+  font-family: 'Rubik', sans-serif;
+  padding: 1.3rem 17.5rem 1.3rem 1.6rem;
+  border: none;
+  outline: none;
+  border-radius: 1.1rem 0 0 1.1rem;
+  cursor: pointer;
+}
+
+.ip_search_box::placeholder {
+  color: var(--Dark-Gray);
+  font-weight: 400;
+}
+
+.ip_search_box:focus {
+  border: none;
+  color: var(--Very-Dark-Gray);
+  font-size: 1.5rem;
+}
+
+.icon_box {
+  background-color: var(--Very-Dark-Gray);
+  padding: 1.6rem 2rem;
+  border-radius: 0 1.1rem 1.1rem 0;
+  transition: ease-in-out;
+  cursor: pointer;
+}
+
+.icon_box:hover {
+  background-color: var(--Neutral-Dark-Gray);
+}
+
+.search_icon {
+  width: 0.9rem;
+}
+
+#map {
+  height: 500px;
+  width: 100%;
+}
+
+.leaflet-popup .leaflet-popup-content {
+  font-size: 1rem;
+}
+
+.ip_address-info {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 8%);
+  z-index: 500;
+
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  padding: 3rem;
+  border-radius: 1.1rem;
+}
+
+.addresses {
+  border-right: 1px solid var(--Dark-Gray);
+  margin-left: 3rem;
+}
+
+.ip_tracker {
+  color: var(--Dark-Gray);
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.ip_input {
+  color: var(--Very-Dark-Gray);
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 0.8rem;
+  margin-right: 7rem;
+  width: 100%;
+}
+
+.ip_address-number {
+  margin-left: 0;
+}
+
+.ip_address-isp {
+  border-right: none;
+}
+
+.loading-spinner {
+  position: relative;
+  top: 40%;
+
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 4px solid #000;
+  border-top: 4px solid #6ab0ff;
+  animation: spin 1s linear infinite;
+  display: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* // 900px */
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 45%;
+  }
+
+  .ip_address-info {
+    top: 17%;
+  }
+}
+
+/* // 650px */
+@media only screen and (max-width: 40.625em) {
+  html {
+    font-size: 60%;
+  }
+
+  .ip_address-header {
+    background-image: url(./images/pattern-bg-mobile.png);
+    height: 25rem;
+  }
+
+  .ip_search_box {
+    width: 255px;
+  }
+
+  .ip_address-info {
+    flex-direction: column;
+    padding: 3rem 4.5rem;
+    margin-top: 2rem;
+  }
+
+  .addresses {
+    border-right: 0;
+    margin-left: 0;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .ip_address-isp {
+    margin-bottom: 0;
+  }
+
+  #map {
+    height: 350px;
+  }
+
+  .leaflet-control-zoom {
+    display: none;
+  }
+}
