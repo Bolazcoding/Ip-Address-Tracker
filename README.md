@@ -27,20 +27,18 @@ Users should be able to:
 
 ### Screenshot
 
-- Preview
+- Desktop Preview
 
-![](./assets/images/Desktop%20preview.png)
+![](./images/Desktop%20preview.png)
 
-![](./assets/images/Field%20required.png)
+- Mobile Preview
 
-![](./assets/images/Valid%20day.png)
-
-![](./assets/images/In%20the%20past.png)
+![](./images/Mobile%20preview.png)
 
 ### Links
 
-- Solution URL: [Solution URL](https://github.com/Bolazcoding/age-calculator-app)
-- Live Site URL: [Live site URL](https://mobolaji-age-calculator-app.vercel.app/)
+- Solution URL: [Solution URL](https://github.com/Bolazcoding/Ip-Address-Tracker)
+- Live Site URL: [Live site URL](https://mobolaji-ip-tracker.vercel.app/)
 
 ### Built with
 
