@@ -80,7 +80,7 @@ body {
 }
 
 #map {
-  height: 500px;
+  height: 100vh;
   width: 100%;
 }
 
@@ -90,7 +90,7 @@ body {
 
 .ip_address-info {
   position: absolute;
-  top: 20%;
+  top: 18%;
   left: 50%;
   transform: translate(-50%, 8%);
   z-index: 500;
@@ -134,7 +134,7 @@ body {
 
 .loading-spinner {
   position: relative;
-  top: 40%;
+  top: 30%;
 
   transform: translateY(-50%);
   width: 40px;
@@ -163,7 +163,7 @@ body {
   }
 
   .ip_address-info {
-    top: 17%;
+    top: 10%;
   }
 }
 
@@ -197,10 +197,6 @@ body {
 
   .ip_address-isp {
     margin-bottom: 0;
-  }
-
-  #map {
-    height: 350px;
   }
 
   .leaflet-control-zoom {
